@@ -6,7 +6,7 @@ This is a basic backend project using Node.js, Express, MySQL, and Faker for gen
 
 Click the image below to watch a video tutorial on YouTube that demonstrates the setup and features of this project.
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[Watch the tutorial](media/tutorial.mp4)
 
 ## Project Setup
 
