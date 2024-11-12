@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Theme Background and Font */
+body {
+    background-color: #141414;
+    color: #e5e5e5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #e50914; /* Netflix red */
+    margin-bottom: 30px;
+}
+
+/* Add New User Button */
+form[action="/user/new"] {
+    margin-bottom: 20px;
+}
+
+.add-user-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-user-btn:hover {
+    background-color: #f40612;
+}
+
+/* User Cards Grid */
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+/* Individual User Card Styling */
+.user-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* User Info Styling */
+.user-info h2 {
+    font-size: 1.2rem;
+    color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin: 5px 0;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Edit and Delete Buttons */
+.edit-btn,
+.delete-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.edit-btn {
+    background-color: #e50914;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #f40612;
+}
+
+.delete-btn {
+    background-color: #333;
+    color: #e5e5e5;
+}
+
+.delete-btn:hover {
+    background-color: #555;
+}

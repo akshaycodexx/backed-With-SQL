@@ -1,0 +1,88 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full page setup */
+body, html {
+    height: 100%;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for centering content */
+.container {
+    text-align: center;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #e50914;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Animated button styles */
+.join-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.join-btn:hover {
+    background-color: #f40612;
+    transform: scale(1.1);
+}
+
+/* Background animation */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #141414;
+    }
+    50% {
+        background-color: #1c1c1c;
+    }
+    100% {
+        background-color: #141414;
+    }
+}
+
+.container {
+    animation: backgroundAnimation 10s infinite;
+}
+
+/* Animation for user count */
+#userCount {
+    color: #f5f5f5;
+    font-weight: bold;
+    animation: countAnimation 2s ease-in-out;
+}
+
+@keyframes countAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

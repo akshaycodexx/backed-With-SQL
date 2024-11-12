@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List | Data Center</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User List</h1>
+    
+    <!-- Redirect button to add a new user -->
+    <form action="/user/new" method="get"> 
+      <button type="submit" class="add-user-btn">Add a New User</button>
+    </form>
+
+    <div class="user-cards">
+      <% users.forEach(user => { %>  
+        <div class="user-card">
+          <div class="user-info">
+            <h2>ID: <%= user.id %></h2>
+            <p>Email: <%= user.email %></p>
+            <p>Username: <%= user.username %></p>
+          </div>
+          <!-- Edit and Delete Buttons -->
+          <div class="action-buttons">
+            <form action="/user/<%= user.id %>/edit" method="post">
+              <button type="submit" class="edit-btn">Edit Username</button>
+            </form>
+            <form action="/user/<%= user.id %>?_method=DELETE" method="post">
+              <button type="submit" class="delete-btn">Delete User</button>
+            </form>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</body>
+</html>

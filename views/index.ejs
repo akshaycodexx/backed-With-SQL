@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Style Page</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>The Total Number of users are: <span id="userCount"><%=count%></span></h2>
+            <form action="/user" method="get">
+                <button type="submit" class="join-btn">Join us today</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
